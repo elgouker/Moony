@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RemitPro - تحويل العملات</title>
+</head>
+<body>
+    <header>
+        <h1>تحويل العملات</h1>
+    </header>
+    <main>
+        <!-- نموذج تحويل العملات -->
+        <form action="payment.html" method="post">
+            <label for="amount">المبلغ:</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="currency">العملة:</label>
+            <select id="currency" name="currency">
+                <option value="usd">دولار أمريكي</option>
+                <option value="eur">يورو</option>
+                <!-- أضف المزيد من العملات حسب الحاجة -->
+            </select>
+            <button type="submit">تحويل</button>
+        </form>
+    </main>
+</body>
+</html>
