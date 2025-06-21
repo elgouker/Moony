@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>RemitPro - Send Money from Egypt to Russia</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RemitPro - الصفحة الرئيسية</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to RemitPro</h1>
-    <p>Send money from Egypt to Russia using USDT and global currencies</p>
-    <a href="register.html">Create Account</a> | <a href="login.html">Login</a>
-  </div>
+    <header>
+        <h1>مرحبًا بكم في RemitPro</h1>
+    </header>
+    <main>
+        <h2>تسجيل جديد</h2>
+        <form action="login.html" method="post">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">تسجيل</button>
+        </form>
+    </main>
 </body>
 </html>
