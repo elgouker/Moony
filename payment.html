@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>Payment Methods</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RemitPro - الدفع</title>
 </head>
 <body>
-  <h2>Choose Payment Method in Egypt</h2>
-  <ul>
-    <li>Vodafone Cash</li>
-    <li>Bank Transfer (CIB / NBE)</li>
-    <li>Orange Money</li>
-  </ul>
+    <header>
+        <h1>الدفع</h1>
+    </header>
+    <main>
+        <!-- نموذج الدفع -->
+        <form action="receive.html" method="post">
+            <label for="card-number">رقم البطاقة:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <label for="expiry-date">تاريخ الانتهاء:</label>
+            <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+            <button type="submit">دفع</button>
+        </form>
+    </main>
 </body>
 </html>
